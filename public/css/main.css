@@ -1,5 +1,6 @@
 body {
     align: center;
+    
     justify-content: center;
     text-align: center;
     }
@@ -7,8 +8,74 @@ body {
     background: black;
     padding:8px;
 }
+.home1{
+  padding: 10px;
+  border: 1px solid #4CAF50;
+  background-color: lightblue;
+}
+h2{
+  text-align:center;
+  
+  
+}
+.ad{
+ 
+  background-image: url('../images/student.jpg') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.lb{
+  background-image: url('../images/librarian.jpg') ;
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+
+input[type=text],input[type=password],input[type=email],input[type=name]{
+  width:100%;
+  box-sizing:border-box;
+ 
+  padding:12px 5px;
+  background:whitesmoke;
+  outline:none;
+  border:none;
+  border-bottom: 1px dotted #fff;
+  color:black;
+  border-radius:5px;
+  margin:5px;
+  font-weight:bold;
+  
+   
+}
+input[type=submit]{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 0;
+  margin-top:30px;
+  
+}
+*{
+  margin:0;
+  padding:0;
+  font-family:Century Gothic;
+  
+}
 ul{
     list-style-type:none;
+}
+.main_header_item_list{
+    display:inline;
+}
+ul {
+  background: #ff9999;
+  padding: 20px;
+}
+ul li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+  
 }
 .main_header_item_list{
     display:inline;
@@ -19,16 +86,15 @@ color: red;
 .main_header_item_list a.active {
 background-color: deepskyblue;
 }
-ul {
-    background: #ff9999;
-    padding: 20px;
-  }
-  ul li {
-    background: #ffe5e5;
-    padding: 5px;
-    margin-left: 35px;
-    
-  }
+ul li a:hover{
+  background-color:yellow
+      color:#000;
+}
+ul lo.active a{
+  background-color:aqua;
+  color:bisque;
+  
+}
 
   a:link, a:visited {
     background-color: #f44336;
@@ -43,6 +109,7 @@ ul {
     background-color: red;
   }
 .textbox {
+  
     border: 2px solid green;
     margin: 10px;
     border-radius: 5px;
@@ -56,3 +123,32 @@ ul {
     height: 30px;
     width: 70px;
     }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      border-radius: 5px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .container {
+      padding: 2px 16px;
+    }
+    .wrap{
+      max-width:400px;
+      border-radius:20px;
+      margin:auto;
+      background:rgba(7, 7, 7, 0.8);
+      box-sizing:border-box;
+      padding:40px;
+      color:#fff;
+      margin-top:50px;
+  }
+  
