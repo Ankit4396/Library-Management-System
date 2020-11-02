@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian</title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/detailsuser.jpg');
+}
+        .mainDiv{
+            background: black;
+            padding:8px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .main_header_item_list{
+            display:inline;
+        }
+        .main_header_item_list a.hover {
+   color: red;
+   }
+   .main_header_item_list a.active {
+   background-color: deepskyblue;
+   }
+   
+        a{
+            margin-right:5px;
+            padding: 8px;
+            text-decoration:none;
+            color: white;
+            background: green;
+        }
+   
+       </style>
+         <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <div class="mainDiv">
+        <nav>
+             <ul>
+                 <li class="main_header_item_list">
+                     <a href="/">Logout</a>
+                 </li>
+                
+             </ul>
+        </nav>
+    </div>
+    
+        <% if(book.length>0){%>
+   
+            <div>
+             <% for(books of book){%>
+              <div>
+                  <ul>
+                 <li> <h3>Name: <%= books.name%> </h3>
+                     <h3>Author: <%= books.author %> </h3> 
+                     <h3>InStock: <%= books.inStock%></h3>
+                     <a href="__blank"><button>Add</button></a>
+                      </li>  
+                 </ul>
+              </div>
+              
+             <% }  %>
+            </div>
+            <% }else{ %>
+           <h2> No product found!</h2>
+             <% }%>
+</body>
+</html>

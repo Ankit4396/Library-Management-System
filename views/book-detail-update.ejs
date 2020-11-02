@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Info</title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/update.jpg');
+}
+        .mainDiv{
+            background: black;
+            padding:8px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .main_header_item_list{
+            display:inline;
+        }
+        .main_header_item_list a.hover {
+   color: red;
+   }
+   .main_header_item_list a.active {
+   background-color: deepskyblue;
+   }
+   
+        a{
+            margin-right:5px;
+            padding: 8px;
+            text-decoration:none;
+            color: white;
+            background: green;
+        }
+   
+       </style>
+         <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <div class="mainDiv">
+        <nav>
+             <ul>
+               
+                 <li class="main_header_item_list">
+                     <a href="/">Logout</a>
+                 </li>
+                 
+             </ul>
+        </nav>
+    </div>
+    <div class="wrap">
+    <form action="/adminbooks" method="POST">
+     
+        Name: <input   class="textbox" type="text" name="name" value="<%= records.name%>" /> <br>
+        Author: <input   class="textbox" type="text" name="author" value="<%= records.author%>"/><br>
+        InStock:<input class="textbox" type="text" name="inStock"  value="<%= records.inStock%>"/><br>
+        <button class="button" type="submit">Update</button>
+        </form>
+        
+        <br><br>
+      </div>
+</body>
+</html>

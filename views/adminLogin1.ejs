@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian</title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/adlog.jpg');
+}
+        .mainDiv{
+            background: black;
+            padding:8px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .main_header_item_list{
+            display:inline;
+        }
+        .main_header_item_list a.hover {
+   color: red;
+   }
+   .main_header_item_list a.active {
+   background-color: deepskyblue;
+   }
+   
+        a{
+            margin-right:5px;
+            padding: 8px;
+            text-decoration:none;
+            color: white;
+            background: green;
+        }
+   
+       </style>
+         <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <div class="wrap">
+    <form action="adminheader" method="POST">
+        User name : <input   class="textbox" type="name" name="uname"/> <br>
+        password: <input   class="textbox" type="password" name="pass"/><br>
+        <button class="button" type="submit">Login</button>
+    </form>
+    <br/><br/>
+    </div>
+    
+        <h2>Wrong Credentials </h2>
+        <a href="/"><h2>Home</h2></a>
+
+</body>
+</html>

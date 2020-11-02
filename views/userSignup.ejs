@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/signuo.jpg');
+}
+        .mainDiv{
+            background: black;
+            padding:8px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .main_header_item_list{
+            display:inline;
+        }
+        .main_header_item_list a.hover {
+   color: red;
+   }
+   .main_header_item_list a.active {
+   background-color: deepskyblue;
+   }
+   
+        a{
+            margin-right:5px;
+            padding: 8px;
+            text-decoration:none;
+            color: white;
+            background: green;
+        }
+   
+       </style>
+         <link rel="stylesheet" href="/css/main.css"/>
+</head>
+
+<body>
+    
+   
+    <div class="mainDiv">
+        <nav>
+             <ul>
+                 <li class="main_header_item_list">
+                    <a href="userLogin"><h2>Login</h2></a>
+                 </li>
+                 <li class="main_header_item_list">
+                    <a href="/"><h2>Home</h2></a>
+                </li>
+                 
+             </ul>
+        </nav>
+    </div>
+    <h1>Registration form</h1>
+    <div class="wrap">
+    <form action="/register" method="POST">
+        Name: <input   class="textbox" type="text" name="name"  required /> <br>
+        Email: <input   class="textbox" type="email" name="email" required/><br>
+        Password: <input class="textbox" type="password" name="password" placeholder="password..(At least 6 character)" required/><br>
+        Confirm-Password: <input class="textbox" type="password" name="password2" placeholder="Re-enter password"  required/><br>
+        <button class="button" type="submit">Register</button>
+        </form>
+        </div>
+       
+        
+</body>
+</html>

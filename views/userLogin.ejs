@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/LS_LibraryManagementSystems.jpg');
+}
+        .mainDiv{
+            background: black;
+            padding:8px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .main_header_item_list{
+            display:inline;
+        }
+        .main_header_item_list a.hover {
+   color: red;
+   }
+   .main_header_item_list a.active {
+   background-color: deepskyblue;
+   }
+   
+        a{
+            margin-right:5px;
+            padding: 8px;
+            text-decoration:none;
+            color: white;
+            background: green;
+        }
+   
+       </style>
+         <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <div class="mainDiv">
+        <nav>
+             <ul>
+                 <li class="main_header_item_list">
+                     <a href="userSignup"><h2>Sign Up</h2></a>
+                 </li>
+                 <li class="main_header_item_list">
+                    <a href="/"><h2>Home</h2></a>
+                </li>
+                 
+             </ul>
+        </nav>
+    </div>
+    <div class="wrap">
+    <form action="user" method="POST">
+        Email Id : <input   class="textbox" type="email" name="email"/> <br>
+        password: <input   class="textbox" type="password" name="pass"/><br>
+        <button class="button" type="submit">Login</button><br>
+        
+        
+       
+        </form>
+        </div>
+
+    
+</body>
+</html>

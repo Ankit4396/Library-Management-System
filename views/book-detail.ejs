@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+    <style>
+        body {
+align: center;
+justify-content: center;
+text-align: center;
+background-image:url('../images/details.jpg');
+}
+     .mainDiv{
+         background: black;
+         padding:8px;
+     }
+     ul{
+         list-style-type:none;
+     }
+     .main_header_item_list{
+         display:inline;
+     }
+     .main_header_item_list a:hover {
+color: red;
+}
+.main_header_item_list a:active {
+background-color: deepskyblue;
+}
+
+     a{
+         margin-right:5px;
+         padding: 8px;
+         text-decoration:none;
+         color: white;
+         background: green;
+     }
+     .textbox {
+border: 2px solid green;
+margin: 10px;
+border-radius: 5px;
+justify-content: center;
+text-align: center;
+}
+
+.button {
+color: red;
+border-radius: 5px;
+height: 30px;
+width: 70px;
+}
+ul {
+  background: #ff9999;
+  padding: 20px;
+}
+ul li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+  border-radius: 2px ;
+  border-color: red;
+ 
+}
+ul li:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0,0.2);
+}
+
+    </style>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+    
+   <div class="mainDiv">
+       <nav>
+            <ul>
+                
+                <li class="main_header_item_list">
+                    <a href="/adminbooks" class="active">Add Books</a>
+                </li>
+            </ul>
+       </nav>
+   </div>
+   <h1>Welcome </h1>
+   <br/><br/>
+   
+   
+   <div >
+  <ul>
+
+    <li><p>Book: <%= book.name %></p></li>
+    <li> <p>Author: <%= book.author %></p></li>
+    <li><p>InStock: <%= book.inStock %></p></li>
+    
+</ul>
+  </div>
+</body>
+</html> 
